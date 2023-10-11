@@ -7,9 +7,9 @@ from django.core.management.base import BaseCommand
 class Command(BaseCommand):
 
     def handle(self, *args, **kwargs):
-        User.objects.create(username="Testuser1", password="Super-strong-pass")
-        User.objects.create(username="Testuser2", password="Super-strong-pass")
-        User.objects.create(username="Testuser3", password="Super-strong-pass")
+        User.objects.create_user("Testuser1", None, "Super-strong-pass")
+        User.objects.create_user("Testuser2", None, "Super-strong-pass")
+        User.objects.create_user("Testuser3", None, "Super-strong-pass")
 
         AccountTier.objects.create(tier_number=1, tier_name="Basic")
         AccountTier.objects.create(tier_number=2, tier_name="Premium")
