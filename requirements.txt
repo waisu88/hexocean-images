@@ -1,0 +1,12 @@
+Django>=4.2.1,<4.3
+psycopg2>=2.8.6,<2.9
+djangorestframework
+celery[redis]
+django-celery-beat==2.5.0
+django-celery-results==2.5.1
+redis==4.5.5
+django-cors-headers
+django-filter
+Pillow==9.4.0
+easy-thumbnails==2.8.5
+django-cleanup==7.0.0

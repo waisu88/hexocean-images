@@ -1,0 +1,178 @@
+h1 {
+    color: green;
+}
+
+
+body {
+    background-color: rgb(51, 51, 51);
+    color: rgb(207, 191, 191);
+    margin: 30px 5px;
+    font-family: Verdana;
+}
+
+.profile-picture {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.head-section {
+    display: flex;   
+}
+
+.name-surname {
+    font-size: 45px;
+    font-style: normal;
+    font-weight: bolder;
+    position: relative;
+    top: 50px;
+    padding-bottom: 10px;
+
+}
+
+.role-description {
+    font-size: 20px;
+    position: relative;
+}
+
+
+.main-description {
+    display: grid;
+    position: relative;
+    justify-items: center;
+}
+
+.about-me {
+    padding-top: 20px;
+}
+
+.about-me-description ul{
+    list-style-type: none;
+}
+
+.list-abilities {
+    line-height: 38px;
+    font-size: 16px;
+}
+
+.resume img {
+    height: 100px;
+    width: auto;
+}
+
+
+
+
+.language-name {
+    padding-bottom: 21px;
+}
+
+.flag {
+    width: 20px;
+    height: auto;
+}
+
+.carousel-item img{
+    height: 300px;
+}
+
+.about-me-section-name {
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.click-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.list-group-item {
+    background-color: rgb(51, 51, 51);
+    color:rgb(207, 191, 191);
+    padding: 20px;
+}
+
+.carousel-indicators,
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+.carousel-indicators {
+    margin-top: 50px;
+}
+
+
+.col-2.resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+/* popup section copied from internet */
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 1000px;
+    height: auto;
+    background-color: #a39999;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    right: 10%;
+    margin-left: -80px;
+    top: -10px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    left: 75%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    height: 300px;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }

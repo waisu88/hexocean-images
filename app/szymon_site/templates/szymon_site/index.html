@@ -1,0 +1,155 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %} 
+<section class="container text-center">
+  <div class="row head-section">
+    <div class="col-3">
+      <img class="profile-picture" src="{% static 'szymon.jpg' %}">
+    </div>
+    <div class="col-5 main-description">
+      <div class="row name-surname">Szymon Wais</div>
+      <div class="row role-description">Aspiring Developer</div>
+    </div>
+    <div class="col-2 resume">
+      <div class="img-resume">
+        <p>Check <br>resume (PDF)</p>
+        <a src="{% static Szymon_Wais_CV.pdf %}" target="_blank">
+          <img src="{% static 'resume_icon.png' %}">
+        </a> 
+      </div>   
+    </div>
+    <div class="col-2 resume">
+      <div class="img-resume">
+        <p><br>Read about me...</p>
+        <img class="click-icon popup" onclick="showAboutMe()" src="{% static 'read.png' %}">
+        <div class="popup"> 
+          <span class="popuptext" id="myPopup">Actually I work as land surveyour. Two years ago I started my journey with programming. Every single moment I'm trying to learn new technologies, develop programs and website. I started with python course, next I was developing simple questions program from basic functional version compiled in terminal, through object-oriented approach converting functions to classes, finally created windowed program in Tkinter. Then I dive into basics of HTML, CSS and JavaScript. About  one year I develop my abilities in backend using Django and Django Rest Framework, knowing also Celery for performing planned tasks, Docker, especially docker-compose for converting development into production. Nowadays I published website using docker-compose, PuTTY and AWS server. Website is operational in real time.
+            I'm blue-sky thinking, searching for new solutions, not affraid of new technologies. When I need something, I learn, I try. I can work on little, short projects but also can dive into tremendous topics. I can work separately, but I can also fit in group work very well. Willingly I will develop as a programmer, use my brain to evolve software and improve technology. 
+            Out of respect for my current employer, my notice period is 3 months.</span>
+        </div>
+      </div>   
+    </div>
+
+  </div>
+</section>
+
+
+
+<section class="container text-center">
+    <div class="row about-me"> 
+      <div class="col-5">
+        <div class="about-me-section-name">Main projects</div>
+        <div class="projects-info fw-bold">Description below image</div>
+        <div class="about-me-description">
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="images"><img src="{% static 'images_overview.png' %}" class="d-block w-100" alt="...">
+                </a>
+                  <div class="carousel-caption d-none d-md-block">
+                </div>
+                <h5>Click on image to explore API</h5>
+                <p>REST Api composed with Django Rest Framework. Enriched with Celery, Postgres, Docker-compose. Application written in reference to HexOcean's recruitment task.</p>
+                <br><br>
+              </div>
+              <div class="carousel-item">
+                <a href="weather"><img src="{% static 'synoptics.png' %}" class="d-block w-100" alt="...">
+                </a>
+                  <div class="carousel-caption d-none d-md-block">
+                </div>
+                <h5>Click on image to explore API</h5>
+                <p>REST Api composed with Django Rest Framework. Application uses Celery to collect data from an external API. Serialization and simple data representation with generic views.</p>
+                <br><br>
+              </div>
+              <div class="carousel-item">
+                <a href="https://github.com/waisu88/Projekty/tree/master/TkinterRysowanie"><img src="{% static 'tkinter_rysuj2.png' %}" class="d-block w-100" alt="..."></a>
+                <div class="carousel-caption d-none d-md-block">
+                  
+                </div>
+                <h5>Click on image to review code</h5>
+                <p>Application written in Tkinter. Draw anything You want on Your actual view. Can be used on win7 or win10. </bt></p>
+                <br><br><br>
+              </div>
+              <div class="carousel-item">
+                <a href="https://github.com/waisu88/Projekty/tree/master/TkinterPytania"><img src="{% static 'questions.png' %}" class="d-block w-100" alt="..."></a>
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+                <h5>Click on image to review code</h5>
+                <p>Application was being created from first steps in programming. First I created program working in terminal, then placed classes instead of functions, finally before diving into Django I've created Tkinter program with attempt to implement MVC model.</p>
+                <br>
+              </div>
+            </div>  
+          
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+          
+        </div>
+      </div>
+      <div class="col-5">
+        <div class="about-me-section-name">Technologies & abilities</div>
+        <div class="about-me-description">
+          <ul class="list-abilities list-group">
+            <div class="list-group-item">
+              <li>Python, Django, Django Rest Framework</li>
+              <li>GIT, SQL, Docker-Compose, PuTTY+AWS</li>
+              <li>JS, HTML&CSS, Celery+Redis</li>
+            </div>
+            <div class="list-group-item">
+              <li>ECDL EPP GIS, strong geodesy, environmental management</li>
+            </div>
+            <div class="list-group-item">
+              <li>Independent and group work, problem solving</li>
+              <li>Resilience & blue-sky thinking</li>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="about-me-section-name">Languages</div>
+        <div class="about-me-description">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="language-name">
+                <img class="flag" src="{% static 'croatia.png' %}">
+                <b>Croatian</b>
+              </div>
+               Pre-Intermediate</li>
+            <li class="list-group-item">
+              <div class="language-name">
+                <img class="flag" src="{% static 'russia.png' %}">
+                <b>Russian</b> 
+              </div> Pre-Intermediate</li>
+            <li class="list-group-item">
+              <div class="language-name">
+                <img class="flag" src="{% static 'england.png' %}">
+                <b>English</b> 
+              </div> Advanced</li>
+            <li class="list-group-item">
+              
+              <div class="language-name">
+                <img class="flag" src="{% static 'poland.png' %}">
+                <b>Polish</b>
+              </div>
+              Native</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</script>
+
+{% endblock content %}
